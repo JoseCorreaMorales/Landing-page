@@ -1,0 +1,460 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    margin: 0;
+    margin: 0;
+    overflow-x: hidden;
+    scroll-snap-type: mandatory;
+}
+
+::-webkit-scrollbar{
+    background: transparent;
+    width: 7px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: rgba(128, 128, 128, 0.762);
+    border-radius: 20px;
+}
+
+
+.container {
+    max-width: 1280px;
+    width: 90%;
+    margin: auto;
+}
+
+::selection {
+    background: #6B728E;
+    color: #fff;
+}
+
+header {
+    background: url('./img/fondo-4.jpg');
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+.menu__logo {
+    font-size: 2.5rem;
+    margin-top: 2rem;
+}
+
+nav {
+    display: flex;
+}
+
+.menu-icon {
+    display: none;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0rem 2rem 0rem 2rem;
+}
+
+.menu__lista {
+    display: flex;
+    /* margin-top: 2rem; */
+    font-weight: bold;
+}
+
+.menu__lista--active {
+    color: #404258;
+    margin-top: 0rem;
+}
+
+.menu__lista li {
+    list-style: none;
+    font-size: 2rem;
+    margin-right: 2.5rem;
+}
+
+.hero-section {
+    text-align: center;
+    margin-top: 20rem;
+}
+
+.hero-section__title {
+    font-size: 6rem;
+}
+
+.hero-section__subtitle {
+    font-size: 2.5rem;
+    margin-bottom: 4rem;
+}
+
+.button {
+    font-size: 1.4rem;
+    text-decoration: none;
+    background-color: #5cb8ff;
+    text-align: center;
+    padding: 2rem 3rem 2rem 3rem;
+    color: white;
+    border-radius: 3rem;
+    transition: 1s;
+}
+
+.button:hover {
+    background-color: #489ddf;
+    transition: 1s;
+}
+
+.espacio-secciones {
+    margin-top: 10rem;
+}
+
+.titlulo-secccion {
+    margin-bottom: 8rem;
+    text-align: center;
+    font-weight: normal;
+    font-size: 5.5rem;
+}
+
+/*------------------------------------------ About me */
+
+
+.container-aboutme {
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+}
+
+
+
+.aboutme-img {
+    border-radius: 1.5rem;
+    width: 100%;
+    height: auto;
+}
+
+.container-aboutme__texto {
+    width: 42%;
+    font-size: 1.7rem;
+}
+
+.container-aboutme__texto a {
+    display: inline-block;
+    margin-top: 1.2rem;
+}
+
+/* -----------------------servicios */
+
+.contenedor-servicios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.servicios-title {
+    font-size: 5.5rem;
+    text-align: center;
+    font-weight: normal;
+}
+
+.servicio h4 {
+    margin-bottom: 2rem;
+}
+
+.servicio {
+    width: 29%;
+    padding: 3.5rem;
+    border-radius: 1rem;
+    margin-bottom: 4rem;
+    color: white;
+
+}
+
+.servicio p {
+    font-size: 1.5rem;
+    /* height: 35rem; */
+    min-height: 35rem;
+}
+
+.servicio h4 {
+    font-size: 3rem;
+
+}
+
+.servicio img {
+    float: right;
+}
+
+.violeta {
+    background-color: #5055df;
+}
+
+.celeste {
+    background-color: #40a8fa;
+}
+
+
+/* ------------------Mis trabajos - carrusel */
+
+.owl-carousel img {
+    border-radius: 20px;
+}
+
+.owl-nav {
+    text-align: center;
+}
+
+.owl-nav span {
+    font-size: 7rem;
+    color: gray;
+}
+
+.owl-nav span:hover {
+    background-color: #a8bece;
+}
+
+/* -----------------------------------------  ¿Por que traabajar conmigo? */
+
+.contendor-trabajar-conmigo {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-around;
+}
+
+.trabajo {
+    width: 25%;
+    text-align: center;
+}
+
+.trabajo img {
+    /* align-items: center; */
+    display: block;
+    margin: auto;
+}
+
+.trabajo p {
+    font-size: 1.7rem;
+    line-height: 3.2rem;
+}
+
+.trabajo h4 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+/* --------------------------------------------------------- Blog */
+
+#seccion-blog {
+    background: #f9fbfd;
+    padding-bottom: 10rem;
+    outline: .1px solid #eeeded;
+}
+
+.contenedor-blog {
+    display: flex;
+    justify-content: space-around;
+}
+
+.contenedor-blog p {
+    font-size: 1.7rem;
+}
+
+.publicacion h4 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    padding: 1rem 1.4rem .5rem 1.4rem;
+}
+
+.publicacion img {
+    width: 100%;
+    height: auto;
+}
+
+.publicacion {
+    width: 30%;
+    box-shadow: 10px 10px 0px 0px rgb(0, 0, 0);
+    min-height: 450px;
+}
+
+.publicacion a {
+    display: inline-block;
+    margin-bottom: 2rem;
+    margin-left: 1.8rem;
+    outline: 1.5px solid rgb(209, 207, 207);
+}
+
+.publicacion p {
+    color: #5a6a69;
+    line-height: 3rem;
+    padding: .5rem 1.4rem 1.4rem 1.4rem;
+}
+
+/* -------------------------------------------- ¿Qué es espras para tener tú pagina web?  */
+
+#que-esperas {
+    background: linear-gradient(rgba(84, 93, 220, .94), rgba(96, 171, 245, .9));
+    text-align: center;
+    padding: 10rem 0;
+    color: white;
+}
+
+#que-esperas a {
+    padding: 2rem 8rem 2rem 8rem;
+    transition: 1s;
+}
+
+#que-esperas a:hover {
+    font-weight: bold;
+    color: rgb(33, 37, 43);
+    transition: 1s;
+    transform: scale(1.2);
+
+    /* transform: rotate(360deg); */
+    /* display: inline-block; */
+}
+
+
+/* ---------------------------------------------------------------- whatsapp */
+
+.whatsapp {
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+}
+
+.whatsapp:hover {
+    transform: scale(1.1);
+}
+
+
+/* --------------------------------------------------------------------------- RESPONSIVE DESING */
+
+@media (max-width: 800px) {
+
+    /* 480 */
+    nav {
+        position: absolute;
+        top: 7rem;
+        left: 0;
+        width: 100vw;
+        background: #489ddf;
+    }
+
+    nav .menu__lista {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    nav .menu__lista li {
+        margin: 2px;
+    }
+
+    .menu-icon {
+        /* mostrar el icono de nuevo */
+        display: block;
+        width: 3rem;
+    }
+
+    .hero-section {
+        margin-top: 7rem;
+    }
+
+    .hero-section__title {
+        font-size: 5.5rem;
+    }
+
+    /* sobre mi */
+    .container-aboutme {
+        flex-direction: column;
+    }
+
+    .container-aboutme__texto {
+        width: 90%;
+        margin: 4rem auto;
+    }
+
+    /* servicios */
+
+    .contenedor-servicios {
+        flex-direction: column;
+    }
+
+    .servicio {
+        width: 90%;
+        margin: 3rem auto;
+
+    }
+
+
+    .contendor-trabajar-conmigo {
+        flex-direction: column;
+    }
+
+    .trabajo {
+        width: 90%;
+        margin: 3rem auto;
+    }
+
+
+    .contenedor-blog {
+        flex-direction: column;
+    }
+
+    .publicacion {
+        width: 90%;
+        margin: 3rem auto;
+    }
+
+}
+
+@media  (max-width: 820px) {
+    .container-aboutme {
+        flex-direction: column;
+    }
+    .container-aboutme__texto{
+      margin: 50px auto;
+      width: 90%;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 900px) {
+    .servicio {
+        width: 45%;
+    }
+
+    .servicio p {
+        font-size: 2rem;
+    }
+
+    nav {
+        position: absolute;
+        top: 7rem;
+        left: 0;
+        width: 100vw;
+        background: #489ddf;
+    }
+
+    nav .menu__lista {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    nav .menu__lista li {
+        margin: 2px;
+    }
+
+
+    .menu-icon {
+        /* mostrar el icono de nuevo */
+        display: block !important;
+        width: 3rem;
+    }
+
+}
